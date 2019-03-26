@@ -1,6 +1,6 @@
 :root {
-    --primary: #FD306E;
-    --gradient: linear-gradient(135deg, #FE1AA0 0%, #FF3040 100%);
+    --primary: #709ad1;
+    --gradient: linear-gradient(to right, rgb(116, 165, 211, .8) , rgb(148, 201, 221, .8));
     --muted:#6F8BA4;
     --grey:#3B566E;
     --secondary: #FFD2DF;
@@ -64,13 +64,13 @@ h3 {
 }
 
 .overlay {
-    background-image: linear-gradient(to right, rgb(254, 26, 160, .8) , rgb(255, 48, 64, .8));
+    background-image: var(--gradient);
     height: 100%;
 }   
 
 .img-container {
     overflow: hidden;
-    height: 500px;
+    height: 400px;
 }
 
 .button {
@@ -100,6 +100,7 @@ nav {
     align-items: center;
     background: var(--white);
     min-height: 8vh;
+    text-transform: uppercase;
 }
 
 .logo {
@@ -194,7 +195,11 @@ body {
 /* Showcase */
 #showcase {
     background: url('imgs/desktop.jpeg') no-repeat center center/cover;
-    height: 35vh;
+    height: 45vh;
+}
+
+#showcase .overlay {
+    padding: 0;
 }
 
 
@@ -218,13 +223,15 @@ body {
 }
 
 #ads .container hr { 
-    border: 1px solid var(--primary);
+    border: none;
+    background: var(--primary);
     width: 50%;
+    height: 1px;
     margin-top: 3rem; 
 }
 
 #ads .text-container {
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 #ads .container :nth-child(4){
@@ -234,15 +241,18 @@ body {
 
 /* Banner1 */
 #banner1 {
-    background: url('imgs/desktop.jpeg') no-repeat center center/cover;
+    margin-bottom: 5rem;
+    background: url('https://source.unsplash.com/1600x1000/?office') no-repeat center center/cover;
 }
 
 #banner1 .container {
-    padding-bottom: 3rem;
+    padding-top: 3rem 0;
+    scroll-padding-bottom: 5rem 0;
 }
 
 #banner1 .container .text-container {
     color: var(--white);
+    margin-bottom: 3rem;
 }
 
 
@@ -275,4 +285,35 @@ body {
     background: var(--primary);
     color: var(--white);
     transition: all .5s ease-in-out;
+}
+
+
+/* Banner2 */
+#banner2 {
+    margin: 5rem 0;
+    background: url('https://source.unsplash.com/1601x1000/?office')  no-repeat center center/cover;
+}
+
+#banner2 .container {
+    padding-bottom: 10rem 0;
+}
+
+#banner2 .container .flex-container .flex-box {
+    background:none;
+    color: var(--white);
+    min-width: 100%;
+}
+
+#banner2 .container .flex-container .flex-box i{
+    color: var(--white);
+}
+
+
+/* Careers */
+#careers .container .grid .text-container h3, #careers .container .grid .text-container h1{
+    color: var(--grey);
+}
+
+#careers .container .grid .text-container p {
+    color: var(--muted);
 }
