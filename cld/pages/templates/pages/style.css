@@ -63,6 +63,9 @@ h3 {
     color: var(--grey);
 }
 
+
+
+
 .overlay {
     background-image: var(--gradient);
     height: 100%;
@@ -195,34 +198,38 @@ body {
 /* Showcase */
 #showcase {
     background: url('imgs/desktop.jpeg') no-repeat center center/cover;
-    height: 45vh;
+    height: 70vh;
 }
 
 #showcase .overlay {
     padding: 0;
+
 }
 
 
 /* Services */
 
 #services .flex-container {
-    margin-top: -6rem;
+    margin-top: -10rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #services .flex-container .flex-box {
     background: var(--white);
     border-radius: 3rem .5rem 3rem .5rem;
+    max-width: 20rem;
 }
 
 
 /* Ads */
-#ads .container {
-    background: var(--white);
+#ads .grid-container {
+    background: var(--light);
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
-#ads .container hr { 
+#ads .grid-container hr{ 
     border: none;
     background: var(--primary);
     width: 50%;
@@ -234,9 +241,11 @@ body {
     padding-top: 1rem;
 }
 
-#ads .container :nth-child(4){
-    margin-top: 5rem;
+#ads  .grid-item-3 {
+    margin-top: 4rem;
 }
+
+
 
 
 /* Banner1 */
@@ -247,7 +256,7 @@ body {
 
 #banner1 .container {
     padding-top: 3rem 0;
-    scroll-padding-bottom: 5rem 0;
+    padding-bottom: 5rem;
 }
 
 #banner1 .container .text-container {
@@ -310,10 +319,112 @@ body {
 
 
 /* Careers */
-#careers .container .grid .text-container h3, #careers .container .grid .text-container h1{
+#careers .text-container {
+    padding: 2rem;
+}
+
+#careers .container .grid-container .text-container h3, #careers .container  .grid-container .text-container h1{
     color: var(--grey);
 }
 
-#careers .container .grid .text-container p {
+#careers .container .grid-container .text-container p {
     color: var(--muted);
 }
+
+
+/* Footer */
+footer {
+    color: var(--white);
+    padding-top: 3rem;
+}
+
+footer .branding a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+footer .branding a:hover{
+    font-weight: bold;
+}
+
+footer .container hr{
+    background: var(--white);
+    border: none;
+    height: 1px;
+}
+
+
+
+
+@media only screen and (min-width: 769px) {
+
+    
+
+    .grid-container {
+        display: grid;
+        grid-gap: 4%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-bottom: 5rem;
+    }
+
+    #ads .grid-container .grid-item-1 {
+        grid-column: 1/5;
+        grid-row: 1/3;
+       
+    }
+
+    #ads .grid-container .grid-item-2 {
+        grid-column: 6/9;
+        grid-row: 1/3;
+        text-align: left;
+        
+    }
+
+    #ads .grid-container .grid-item-3 {
+        margin: 0;
+        grid-column: 5/9;
+        grid-row: 5/6;
+      
+    }
+
+    #ads .grid-container .grid-item-4 {
+        grid-column: 1/4;
+        grid-row: 5/6;
+        text-align: right;
+    }
+
+    #banner1 {
+        margin-top: 8rem;
+    }
+
+    
+
+
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    #banner2 .container .flex-container .flex-box{
+       min-width: 5rem;
+     
+    }
+
+    /* Careers */
+    #careers .grid-container .img-container{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #careers .grid-container .text-container{
+        grid-column: 3/4;
+        grid-row: 1/2;
+        text-align: left;
+        padding: 0;
+    }
+
+    #careers .grid-container .text-container h3{ 
+        padding-left: 0;
+    }
+} 
