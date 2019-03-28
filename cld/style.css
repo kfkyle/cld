@@ -287,7 +287,10 @@ body {
     background: var(--white);
     border-radius: 3rem .5rem 3rem .5rem;
     max-width: 20rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
+
 
 #services .flex-container .flex-box:hover  i{
     transition: all .5s ease-in-out;
@@ -319,6 +322,10 @@ body {
     padding-bottom: 5rem;
 }
 
+#ads .grid-container h1{
+    line-height: 3rem;
+}
+
 #ads .grid-container hr{ 
     border: none;
     background: var(--primary);
@@ -345,19 +352,49 @@ body {
 }
 
 #banner1 .container {
-    padding-top: 3rem 0;
+    padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
-#banner1 .container .text-container {
+#banner1 .container .flex-container .flex-box{
+    width: 215px;
+    height: 150px;
+    padding: 2rem;
+}
+
+#banner1 .container .flex-container .flex-box h3{
+    padding-bottom: 0;
+    padding-top: 0;
+    font-size: 1.25rem;
+}
+
+#banner1 .flex-container .flex-box {
+    background: var(--white);
+    border-radius: 3rem .5rem 3rem .5rem;
+    max-width: 20rem;
+}
+
+#banner1 .flex-container .flex-box:hover  i{
+    transition: all .5s ease-in-out;
     color: var(--white);
-    margin-bottom: 3rem;
+}
+
+#banner1 .flex-container .flex-box:hover  {
+    transition: all .5s ease-in-out;
+    background: var(--primary);
+    color: var(--white);
+}
+
+#banner1 .flex-container .flex-box:hover  h3{
+    transition: all .5s ease-in-out;
+    color: var(--white);
 }
 
 
 /* About Us */
 #about-us {
     margin-bottom: 5rem;
+    margin-top: -5rem;
 }
 
 #about-us .container .text-container h1 {
@@ -397,8 +434,8 @@ body {
     background: url('https://source.unsplash.com/1601x1000/?office')  no-repeat center center/cover;
 }
 
-#banner2 .container {
-    padding-bottom: 10rem 0;
+#banner2  {
+    margin-bottom: 0;
 }
 
 #banner2 .container .flex-container .flex-box {
@@ -422,10 +459,21 @@ body {
     font-size: 2.5rem;
 }
 
+#banner2 .container .flex-container h1{
+    padding: 0;
+}
+
+
 
 /* Careers */
 #careers .text-container {
     padding: 2rem;
+    color: var(--muted);
+}
+
+#careers .text-container h1{
+    padding-top: 0;
+    color: var(--grey);
 }
 
 #careers .container .grid-container .text-container h3, #careers .container  .grid-container .text-container h1{
@@ -436,6 +484,8 @@ body {
     color: var(--muted);
 }
 
+
+
 #careers .grid-container hr{ 
     border: none;
     background: var(--primary);
@@ -445,6 +495,11 @@ body {
 }
 
 /* products */
+
+#products {
+    margin-top: 5rem;
+}
+
 #products .text-container {
     padding: 2rem;
 }
@@ -466,6 +521,10 @@ body {
 }
 
 /* Products-2 */
+
+#products-2 {
+    margin-top: 5rem;
+}
 
 #products-2 .text-container {
     padding: 2rem;
@@ -490,7 +549,7 @@ body {
 
 /* Contact */
 #form {
-    margin-bottom: 4rem; 
+    margin: 4rem 0; 
 }
 #form .container .form-control {
     background: transparent;
