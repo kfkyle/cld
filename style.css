@@ -359,7 +359,7 @@ body {
 #banner1 .container .flex-container .flex-box{
     width: 215px;
     height: 150px;
-    padding: 2rem;
+    padding: 2rem 4rem;
 }
 
 #banner1 .container .flex-container .flex-box h3{
@@ -368,11 +368,12 @@ body {
     font-size: 1.25rem;
 }
 
-#banner1 .flex-container .flex-box {
+/* #banner1 .flex-container .flex-box {
     background: var(--white);
     border-radius: 3rem .5rem 3rem .5rem;
     max-width: 20rem;
-}
+    padding: 0 4rem;
+} */
 
 #banner1 .flex-container .flex-box:hover  i{
     transition: all .5s ease-in-out;
