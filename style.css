@@ -1,3 +1,7 @@
+* {
+    display: none;
+}
+
 :root {
     --primary: #74a5d3;
     --gradient: linear-gradient(to right, rgb(116, 165, 211, .8) , rgb(148, 201, 221, .8));
