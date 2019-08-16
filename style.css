@@ -1,6 +1,4 @@
-* {
-    display: none;
-}
+
 
 :root {
     --primary: #74a5d3;
@@ -137,10 +135,20 @@ nav {
 }
 
 .nav-links {
+    border-top: 1px solid var(--primary);
     display: flex;
-    width: 50%;
+    width: 100%;
     margin: 0;
-    padding: 0;
+    padding-top: 1.5rem;
+    position: absolute;
+    right: 0px;
+    height: 30vh;
+    top: 5.3rem;
+    background: var(--white);
+    flex-direction: column;
+    align-items: center;
+    transform: translateX(100%);
+    transition: transform .5s ease-in;
 }
 .nav-links li {
     display: flex;
@@ -148,16 +156,13 @@ nav {
     justify-content: left;
     list-style: none;
     opacity: 0;
-    height: 10%;
+    height: 30%;
     width: 100%;
     box-sizing: border-box;
     border-top: 1px solid var(--white);
     border-bottom: 1px solid var(--white);
 }
-.nav-links .small {
-    padding-left: 3rem;
-    height:10%;
-}
+
 .nav-links h3{
     font-size: 1.25rem;
 }
@@ -179,19 +184,6 @@ nav {
 
 body {
     overflow-x: hidden;
-}
-
-.nav-links {
-    position: absolute;
-    right: 0px;
-    height: 92vh;
-    top: 8vh;
-    background: var(--white);
-    flex-direction: column;
-    align-items: center;
-    transform: translateX(100%);
-    transition: transform .5s ease-in;
-
 }
 
 .nav-active {
@@ -278,6 +270,16 @@ body {
     padding: 0;
 }
 
+#showcase-2 .text-container h1{
+    padding-bottom: 1rem;
+}
+
+#shocase-s .text-container p {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
 
 /* Services */
 
@@ -317,7 +319,7 @@ body {
 
 /* Ads */
 #ads {
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
 
 #ads .grid-container {
@@ -611,9 +613,14 @@ body {
 
 #offices .container .flex-container .flex-box h3{
     text-decoration: underline;
-    padding-left: 0; 
+    padding-left: 1rem; 
     padding-bottom: 0; 
 }
+
+#offices .container .flex-container .flex-box p{
+    padding-left: 1rem 
+}
+
 
 
 
@@ -655,6 +662,8 @@ footer .container hr{
         padding-right: 3rem;
         padding-bottom: 5rem;
     }
+
+
 
     #ads .grid-container .grid-item-1 {
         grid-column: 1/5;
@@ -769,3 +778,23 @@ footer .container hr{
         padding-left: 5rem;
     }
 } 
+
+
+/* Error Page */
+
+#incomplete .container {
+    margin-top: 8rem;
+}
+
+#incomplete .container .fa-wrench {
+    color: var(--primary);
+}
+
+#incomplete .container .text-container .error-title {
+    color: var(--grey);
+}
+
+#incomplete .container .text-container .error-text {
+    color: var(--muted);
+    
+}
